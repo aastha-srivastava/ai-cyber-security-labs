@@ -1,0 +1,77 @@
+{
+  "evasion_curve": [
+    {
+      "eps": 0.0,
+      "evasion_rate": 0.0246
+    },
+    {
+      "eps": 0.1,
+      "evasion_rate": 0.0257
+    },
+    {
+      "eps": 0.2,
+      "evasion_rate": 0.0343
+    },
+    {
+      "eps": 0.3,
+      "evasion_rate": 0.0503
+    },
+    {
+      "eps": 0.5,
+      "evasion_rate": 0.106
+    }
+  ],
+  "lab": "Lab 2 - Machine Learning Techniques for Cyber Security",
+  "models": {
+    "random_forest": {
+      "accuracy": 0.985,
+      "f1": 0.9854,
+      "precision": 0.9956,
+      "recall": 0.9754,
+      "roc_auc": 0.9853
+    },
+    "svm_rbf": {
+      "accuracy": 0.9572,
+      "f1": 0.9593,
+      "precision": 0.9478,
+      "recall": 0.9711,
+      "roc_auc": 0.9853
+    }
+  },
+  "n_attack_test": 934,
+  "n_test": 1800,
+  "permutation_importance": [
+    {
+      "drop": 0.20537,
+      "feature": "flag_SF"
+    },
+    {
+      "drop": 0.07056,
+      "feature": "same_srv_rate"
+    },
+    {
+      "drop": 0.00741,
+      "feature": "rerror_rate"
+    },
+    {
+      "drop": 0.00278,
+      "feature": "dst_bytes"
+    },
+    {
+      "drop": 0.00204,
+      "feature": "src_bytes"
+    },
+    {
+      "drop": 0.00093,
+      "feature": "diff_srv_rate"
+    },
+    {
+      "drop": 0.00056,
+      "feature": "srv_count"
+    },
+    {
+      "drop": 0.00037,
+      "feature": "count"
+    }
+  ]
+}

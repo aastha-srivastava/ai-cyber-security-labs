@@ -1,0 +1,83 @@
+{
+  "alerts_on_test_set": 957,
+  "alerts_per_10k_flows": 5317,
+  "confusion": {
+    "fn": 23,
+    "fp": 46,
+    "tn": 820,
+    "tp": 911
+  },
+  "lab": "Lab 4 - AI for Cyber Security: Threat Detection and Prevention",
+  "operating_threshold": 0.1233,
+  "per_family_detection": {
+    "1": 0.9926,
+    "2": 0.962,
+    "3": 0.9787,
+    "4": 0.934
+  },
+  "prevention_rules": [
+    "rate-limit a single source exceeding 200 SYNs/min (count > 200 and serror_rate > 0.6)",
+    "drop flows with flag=S0 and dst_host_srv_count > 200 for 60s",
+    "challenge (captcha/MFA) any flow with rerror_rate > 0.5 and same_srv_rate < 0.3",
+    "quarantine hosts whose alerts exceed 5 in 10 min for manual triage"
+  ],
+  "roc_auc": 0.9858,
+  "threshold_table": [
+    {
+      "alerts_per_10k": 5100,
+      "precision": 0.9924,
+      "recall": 0.9754,
+      "threshold": 0.3
+    },
+    {
+      "alerts_per_10k": 5083,
+      "precision": 0.9956,
+      "recall": 0.9754,
+      "threshold": 0.5
+    },
+    {
+      "alerts_per_10k": 5078,
+      "precision": 0.9956,
+      "recall": 0.9743,
+      "threshold": 0.7
+    },
+    {
+      "alerts_per_10k": 5022,
+      "precision": 0.9956,
+      "recall": 0.9636,
+      "threshold": 0.9
+    },
+    {
+      "alerts_per_10k": 5317,
+      "precision": 0.9519,
+      "recall": 0.9754,
+      "threshold": 0.1233
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "dst_bytes",
+      "importance": 0.25328
+    },
+    {
+      "feature": "flag_SF",
+      "importance": 0.19948
+    },
+    {
+      "feature": "same_srv_rate",
+      "importance": 0.10545
+    },
+    {
+      "feature": "serror_rate",
+      "importance": 0.09832
+    },
+    {
+      "feature": "duration",
+      "importance": 0.07368
+    },
+    {
+      "feature": "src_bytes",
+      "importance": 0.05788
+    }
+  ]
+}

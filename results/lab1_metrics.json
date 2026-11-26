@@ -1,0 +1,90 @@
+{
+  "accuracy": 0.9828,
+  "attack_families": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "confusion_matrix": [
+    [
+      862,
+      4
+    ],
+    [
+      27,
+      907
+    ]
+  ],
+  "f1": 0.9832,
+  "feature_weights": [
+    {
+      "feature": "same_srv_rate",
+      "weight": -3.61141
+    },
+    {
+      "feature": "flag_SF",
+      "weight": -2.60359
+    },
+    {
+      "feature": "serror_rate",
+      "weight": 2.54772
+    },
+    {
+      "feature": "flag_S0",
+      "weight": 2.34847
+    },
+    {
+      "feature": "rerror_rate",
+      "weight": 2.33441
+    },
+    {
+      "feature": "diff_srv_rate",
+      "weight": 1.78585
+    },
+    {
+      "feature": "flag_REJ",
+      "weight": 1.74603
+    },
+    {
+      "feature": "protocol_type_icmp",
+      "weight": 0.83709
+    }
+  ],
+  "lab": "Lab 1 - Introduction to AI and Cyber Security",
+  "model": "LogisticRegression (balanced)",
+  "n_features": 18,
+  "n_test": 1800,
+  "n_train": 4200,
+  "per_class": {
+    "0": {
+      "f1-score": 0.9823361823361824,
+      "precision": 0.96962879640045,
+      "recall": 0.9953810623556582,
+      "support": 866.0
+    },
+    "1": {
+      "f1-score": 0.9831978319783198,
+      "precision": 0.995609220636663,
+      "recall": 0.9710920770877944,
+      "support": 934.0
+    },
+    "accuracy": 0.9827777777777778,
+    "macro avg": {
+      "f1-score": 0.9827670071572511,
+      "precision": 0.9826190085185564,
+      "recall": 0.9832365697217262,
+      "support": 1800.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9827832827616027,
+      "precision": 0.9831097498652406,
+      "recall": 0.9827777777777778,
+      "support": 1800.0
+    }
+  },
+  "precision": 0.9956,
+  "recall": 0.9711,
+  "task": "binary intrusion detection (attack vs normal)"
+}

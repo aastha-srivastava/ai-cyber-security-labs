@@ -1,0 +1,88 @@
+{
+  "accuracy": 0.9839,
+  "confusion_matrix": [
+    [
+      861,
+      5
+    ],
+    [
+      24,
+      910
+    ]
+  ],
+  "epochs_run": 29,
+  "f1": 0.9843,
+  "lab": "Lab 3 - Deep Learning Techniques for Cyber Security",
+  "model": "MLP 64-32 relu, scaled features",
+  "per_family_recall": {
+    "0": 0.9942,
+    "1": 0.9926,
+    "2": 0.962,
+    "3": 0.9787,
+    "4": 0.9245
+  },
+  "permutation_importance": [
+    {
+      "drop": 0.0263,
+      "feature": "flag_REJ"
+    },
+    {
+      "drop": 0.02278,
+      "feature": "same_srv_rate"
+    },
+    {
+      "drop": 0.02093,
+      "feature": "flag_SF"
+    },
+    {
+      "drop": 0.01907,
+      "feature": "flag_S0"
+    },
+    {
+      "drop": 0.01278,
+      "feature": "diff_srv_rate"
+    },
+    {
+      "drop": 0.01278,
+      "feature": "rerror_rate"
+    },
+    {
+      "drop": 0.00963,
+      "feature": "src_bytes"
+    },
+    {
+      "drop": 0.00796,
+      "feature": "flag_RSTO"
+    }
+  ],
+  "precision": 0.9945,
+  "recall": 0.9743,
+  "report": {
+    "0": {
+      "f1-score": 0.9834380354083381,
+      "precision": 0.9728813559322034,
+      "recall": 0.9942263279445728,
+      "support": 866.0
+    },
+    "1": {
+      "f1-score": 0.9843158464034614,
+      "precision": 0.994535519125683,
+      "recall": 0.974304068522484,
+      "support": 934.0
+    },
+    "accuracy": 0.9838888888888889,
+    "macro avg": {
+      "f1-score": 0.9838769409058997,
+      "precision": 0.9837084375289432,
+      "recall": 0.9842651982335284,
+      "support": 1800.0
+    },
+    "weighted avg": {
+      "f1-score": 0.983893521780252,
+      "precision": 0.9841174606114867,
+      "recall": 0.9838888888888889,
+      "support": 1800.0
+    }
+  },
+  "roc_auc": 0.9829
+}
